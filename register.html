@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="ground.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" >
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="whole">
+        <div class="heading">
+            <h1>STUDENT REGISTER</h1>
+        </div>
+        <div class="body">
+            <table id="myTable" class="display">
+                <thead>
+                    <tr>
+                        <th>Roll no</th>
+                        <th>Name</th>
+                        <th>phone no</th>
+                        <th>Option</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1200</td>
+                        <td>viswa</td>
+                        <td>787979790</td>
+                        <td>
+                            <button><i class="fa fa-pencil-square-o"></i></button>
+                            <button><i class="fa fa-trash"></i></button>
+                            
+                        </td>
+                    </tr>
+                 
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        $(document).ready( function () {
+      $('#myTable').DataTable();
+       } );
+    </script>
+</body>
+</html>
